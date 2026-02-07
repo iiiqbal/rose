@@ -1,25 +1,61 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>For You</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Just For You</title>
+
   <style>
     body {
-      background: #000;
-      color: white;
+      margin: 0;
       height: 100vh;
+      background: radial-gradient(circle, #120000, #000);
       display: flex;
       align-items: center;
       justify-content: center;
-      font-family: Arial;
+      font-family: 'Arial', sans-serif;
+      color: white;
       text-align: center;
+      padding: 20px;
+      overflow: hidden;
+    }
+
+    .container {
+      max-width: 700px;
+      animation: fadeIn 2s ease;
+    }
+
+    h1 {
+      font-size: 32px;
+      font-weight: normal;
+      line-height: 1.5;
+    }
+
+    .sub {
+      margin-top: 25px;
+      font-size: 20px;
+      opacity: 0.85;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(15px); }
+      to { opacity: 1; transform: translateY(0); }
     }
   </style>
 </head>
 
 <body>
-  <h1>
-    You made it here 🌹<br><br>
-    This is just the beginning
-  </h1>
+
+  <div class="container">
+    <h1>
+      You made it here 🌹<br><br>
+      And now… everything begins
+    </h1>
+
+    <div class="sub">
+      This wasn’t random<br>
+      This was meant for you
+    </div>
+  </div>
+
 </body>
 </html>

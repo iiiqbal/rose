@@ -1,7 +1,9 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Tap the Rose</title>
+
   <style>
     body {
       margin: 0;
@@ -11,28 +13,38 @@
       align-items: center;
       justify-content: center;
       color: white;
-      font-family: Arial;
+      font-family: Arial, sans-serif;
     }
+
     .box {
       text-align: center;
       cursor: pointer;
     }
+
     .rose {
-      font-size: 80px;
+      font-size: 120px;
       animation: float 2s infinite;
     }
+
+    p {
+      font-size: 22px;
+      opacity: 0.85;
+      margin-top: 15px;
+    }
+
     @keyframes float {
       0% { transform: translateY(0); }
-      50% { transform: translateY(-10px); }
+      50% { transform: translateY(-12px); }
       100% { transform: translateY(0); }
     }
   </style>
 </head>
 
 <body>
+
   <div class="box" onclick="go()">
     <div class="rose">🌹</div>
-    <p>Tap the the once again....SLOWLY</p>
+    <p>tap the rose once again... SLOWLY</p>
   </div>
 
   <script>
@@ -40,5 +52,6 @@
       window.location.href = "main.html";
     }
   </script>
+
 </body>
 </html>
