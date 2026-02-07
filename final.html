@@ -2,7 +2,7 @@
 <html>
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Just For You</title>
+  <title>Just One More Tap</title>
 
   <style>
     body {
@@ -16,31 +16,23 @@
       color: white;
       text-align: center;
       padding: 20px;
-      overflow: hidden;
+    }
+
+    .box {
       cursor: pointer;
       animation: fadeIn 2s ease;
     }
 
-    .container {
-      max-width: 700px;
-    }
-
     h1 {
-      font-size: 32px;
-      font-weight: normal;
+      font-size: 30px;
       line-height: 1.5;
+      font-weight: normal;
     }
 
-    .sub {
+    p {
       margin-top: 25px;
-      font-size: 20px;
-      opacity: 0.85;
-    }
-
-    .hint {
-      margin-top: 35px;
-      font-size: 16px;
-      opacity: 0.6;
+      font-size: 18px;
+      opacity: 0.7;
     }
 
     @keyframes fadeIn {
@@ -50,27 +42,23 @@
   </style>
 </head>
 
-<body onclick="goFinal()">
+<body>
 
-  <div class="container">
+  <div class="box" onclick="goPython()">
     <h1>
-      You made it here 🌹<br><br>
-      And now… everything begins
+      This is the last step 🌹<br><br>
+      Everything I made for you<br>
+      waits on the other side
     </h1>
 
-    <div class="sub">
-      This wasn’t random<br>
-      This was meant for you
-    </div>
-
-    <div class="hint">
-      tap anywhere… slowly
-    </div>
+    <p>
+      tap once more… slowly
+    </p>
   </div>
 
   <script>
-    function goFinal() {
-      window.location.href = "final.html";
+    function goPython() {
+      window.location.href = "https://iiqbal.pythonanywhere.com/";
     }
   </script>
 
