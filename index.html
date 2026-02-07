@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Tap the Rose</title>
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      background: #000;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-family: Arial;
+    }
+    .box {
+      text-align: center;
+      cursor: pointer;
+    }
+    .rose {
+      font-size: 80px;
+      animation: float 2s infinite;
+    }
+    @keyframes float {
+      0% { transform: translateY(0); }
+      50% { transform: translateY(-10px); }
+      100% { transform: translateY(0); }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="box" onclick="go()">
+    <div class="rose">🌹</div>
+    <p>Tap the the once again....SLOWLY</p>
+  </div>
+
+  <script>
+    function go() {
+      window.location.href = "main.html";
+    }
+  </script>
+</body>
+</html>
